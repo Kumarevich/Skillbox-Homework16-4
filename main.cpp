@@ -57,7 +57,7 @@ int main() {
         if (music[i] == ' ') {
             std::cout << music[i];
         } else {
-            shift = (int)music[i] - 49;
+            shift = (int)music[i] - (int)'1';
             temp = temp << shift;
             std::cout << note_to_text(temp);
         }
